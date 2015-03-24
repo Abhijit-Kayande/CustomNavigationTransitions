@@ -21,7 +21,7 @@
 
 @property (nonatomic) BOOL reverse;
 
-@property (nonatomic) int Type;  //1 to 7
+@property (nonatomic) int Type;  //1 to 8
 
 @property (nonatomic,strong) UIView *TransitionView;
 

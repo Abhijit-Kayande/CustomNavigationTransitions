@@ -368,19 +368,12 @@ static NSTimeInterval const AnimationDuration = 0.5f;
             break;
         }
             
-        default:
+        case 8:
         {
-            
-            //Testing
-            
-            
-            
-            
-            
             
             //Make Small
             
-            CGAffineTransform scale = CGAffineTransformMakeScale(0.7, 0.7);
+            CGAffineTransform scale = CGAffineTransformMakeScale(0.9, 0.9);
             
             [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0.2 options:0x00 animations:^{
                 
@@ -394,12 +387,12 @@ static NSTimeInterval const AnimationDuration = 0.5f;
                 
                 
                 
-                CGFloat travelDistance = [transitionContext containerView].bounds.size.height;
+                CGFloat travelDistance = [transitionContext containerView].bounds.size.width;
                 
                 
                 
                 
-                CGAffineTransform Slide = CGAffineTransformMakeTranslation (0, _reverse ? travelDistance : -travelDistance);
+                CGAffineTransform Slide = CGAffineTransformMakeTranslation (_reverse ? travelDistance : -travelDistance, 0);
                 
                 
                 
@@ -430,16 +423,53 @@ static NSTimeInterval const AnimationDuration = 0.5f;
                 
             }];
             
+            break;
+        }
+        default:
+        {
+            
+            //Testing
+            
+            
+            CGFloat travelDistance = [transitionContext containerView].bounds.size.width;
             
             
             
             
+            CGAffineTransform Slide = CGAffineTransformMakeTranslation (_reverse ? travelDistance : -travelDistance, 0);
+            
+            
+            
+            
+            
+            
+            if (!_reverse) {
+                [toViewController.view setBackgroundColor:_TransitionView.backgroundColor];
+            }
+            
+            
+            
+            [container addSubview:toViewController.view];
+            
+            toViewController.view.transform = CGAffineTransformInvert (Slide);
+            
+            
+            
+            [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0 usingSpringWithDamping:1.0 initialSpringVelocity:0.2 options:0x00 animations:^{
+                fromViewController.view.transform = Slide;
+                
+                toViewController.view.transform = CGAffineTransformIdentity;
+                
+            } completion:^(BOOL finished) {
+                fromViewController.view.transform = CGAffineTransformIdentity;
+                [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+            }];
             
             
             break;
             
             
-
+            
             
         }
     }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>41FB359E-05D9-4397-875B-C76447EE597C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AnimatedTransioning</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2F5CB3CCFCA67DADEFCB27F6F85DF5988B756E9F</key>
+		<string>https://github.com/Abhijit-Kayande/CustomNavigationTransitions.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AnimatedTransioning.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2F5CB3CCFCA67DADEFCB27F6F85DF5988B756E9F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Abhijit-Kayande/CustomNavigationTransitions.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2F5CB3CCFCA67DADEFCB27F6F85DF5988B756E9F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2F5CB3CCFCA67DADEFCB27F6F85DF5988B756E9F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CustomNavigationTransitions</string>
+		</dict>
+	</array>
+</dict>
+</plist>

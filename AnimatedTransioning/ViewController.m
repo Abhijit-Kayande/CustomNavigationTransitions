@@ -100,7 +100,7 @@
     [anim setTransitionView:SelectedView];
     
     
-    [anim setType:6];   //1 to 7;
+    [anim setType:8];   //1 to 8;
     
     if (operation==UINavigationControllerOperationPush) {
         
