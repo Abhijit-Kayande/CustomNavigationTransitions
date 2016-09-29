@@ -10,7 +10,7 @@
 
 #import "AbhiAnimatedTransitioning.h"
 
-static NSTimeInterval const AnimationDuration = 0.5f;
+static NSTimeInterval const AnimationDuration = 0.7f;
 
 
 @implementation AbhiAnimatedTransitioning
@@ -45,7 +45,7 @@ static NSTimeInterval const AnimationDuration = 0.5f;
     
     
     switch (_Type) {
-        case 1:
+        case ABTransitionType1:
         {
             
             if (!self.reverse) {
@@ -94,7 +94,7 @@ static NSTimeInterval const AnimationDuration = 0.5f;
             
             break;
         }
-        case 2:
+        case ABTransitionType2:
         {
             
             CGFloat travelDistance = [transitionContext containerView].bounds.size.width + 50;
@@ -149,7 +149,7 @@ static NSTimeInterval const AnimationDuration = 0.5f;
             
             break;
         }
-        case 3:
+        case ABTransitionType3:
         {
             
             //CGFloat travelDistance = [transitionContext containerView].bounds.size.width + 50;
@@ -205,7 +205,7 @@ static NSTimeInterval const AnimationDuration = 0.5f;
             
             break;
         }
-        case 4:
+        case ABTransitionType4:
         {
             
             if (self.reverse) {
@@ -244,7 +244,7 @@ static NSTimeInterval const AnimationDuration = 0.5f;
             
             break;
         }
-        case 5:
+        case ABTransitionType5:
         {
             
             CGFloat travelDistance = [transitionContext containerView].bounds.size.width + 50;
@@ -287,7 +287,7 @@ static NSTimeInterval const AnimationDuration = 0.5f;
             
             break;
         }
-        case 6:
+        case ABTransitionType6:
         {
             
             CGFloat travelDistance = [transitionContext containerView].bounds.size.height;
@@ -327,7 +327,7 @@ static NSTimeInterval const AnimationDuration = 0.5f;
             
             break;
         }
-            case 7:
+            case ABTransitionType7:
         {
             
             CGFloat travelDistance = [transitionContext containerView].bounds.size.width + 50;
@@ -368,7 +368,7 @@ static NSTimeInterval const AnimationDuration = 0.5f;
             break;
         }
             
-        case 8:
+        case ABTransitionType8:
         {
             
             //Make Small
